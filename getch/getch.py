@@ -19,6 +19,5 @@ def find_getch():
         finally:
             termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
         return ch
-
     return _getch
 
